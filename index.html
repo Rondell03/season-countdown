@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Days until Spring!</title>
+    <meta property="og:title" content="Season Countdown">
+    <meta property="og:description" content="Watch the countdown to the next season. See exactly how many days until spring, summer, fall, or winter arrives.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="backgrounds/season_countdown.png">
+    <meta property="og:url" content="https://rondell03.github.io/season-countdown/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Season Countdown">
+    <meta name="twitter:description" content="Watch the countdown to the next season. See exactly how many days until spring, summer, fall, or winter arrives.">
+    <meta name="twitter:image" content="backgrounds/season_countdown.png">
+    <meta name="description" content="A beautiful countdown timer showing days until the next season with seasonal backgrounds.">
+    <link rel="stylesheet" href="style.css">
+    <title>Season Countdown</title>
 </head>
 <body>
-    
+    <span class="date-display">Today's date is <span id="today-date"></span>, <span id="next-season"></span> is on <span id="season-date"></span></span>
+    <div id="countdown"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 50px;
+}
+
+.date-display {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.format-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.format-container label {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.format-container input[type="radio"] {
+    cursor: pointer;
+    margin-right: 10px;
+}
