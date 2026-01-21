@@ -48,3 +48,58 @@ body {
     cursor: pointer;
     margin-right: 10px;
 }
+
+.button-container {
+    position: fixed;
+    bottom: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.share-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: white;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+}
+
+.facebook-btn:hover {
+    background-color: #166fe5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.github-btn {
+    background-color: #333333;
+}
+
+.github-btn:hover {
+    background-color: #1a1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
