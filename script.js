@@ -31,10 +31,7 @@ function updateCountdown() {
     const timeDiff = nextSeason.start - now;
 
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-
+    
     const countdownElement = document.getElementById('countdown');
     const todayDateElement = document.getElementById('today-date');
     const seasonDateElement = document.getElementById('season-date');
