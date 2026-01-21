@@ -90,6 +90,16 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.share-image-btn {
+    background-color: #10b981;
+}
+
+.share-image-btn:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .footer {
     position: fixed;
     bottom: 20px;
