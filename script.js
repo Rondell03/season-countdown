@@ -48,24 +48,19 @@ function generateCountdownImage(days, seasonName) {
 
             const ctx = canvas.getContext('2d');
 
-            // Draw background image
             ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-            // Add semi-transparent overlay
             ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw logo at top center
             const logoWidth = 300;
             const logoHeight = 120;
             ctx.drawImage(logoImg, canvas.width / 2 - logoWidth / 2, 30, logoWidth, logoHeight);
 
-            // Draw main countdown text
             ctx.fillStyle = 'white';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
 
-            // Main countdown text
             ctx.font = 'bold 120px Arial';
             ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
             ctx.shadowBlur = 10;
@@ -73,7 +68,6 @@ function generateCountdownImage(days, seasonName) {
             ctx.shadowOffsetY = 2;
             ctx.fillText(`${days} until ${seasonName}`, canvas.width / 2, canvas.height / 2 - 50);
 
-            // Attribution text
             ctx.font = '32px Arial';
             ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
             ctx.shadowBlur = 5;
@@ -81,7 +75,6 @@ function generateCountdownImage(days, seasonName) {
             ctx.shadowOffsetY = 1;
             ctx.fillText(`${formatDate(nextSeason.start)}`, canvas.width / 2, canvas.height / 2 + 80);
 
-            // Draw website URL at bottom with transparency
             ctx.globalAlpha = 0.5;
             ctx.fillStyle = 'white';
             ctx.font = '20px Arial';
@@ -128,7 +121,6 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// Handle share button click
 document.getElementById('share-btn').addEventListener('click', async function () {
     const nextSeason = getNextSeason();
     const now = new Date();
@@ -142,7 +134,6 @@ document.getElementById('share-btn').addEventListener('click', async function ()
     try {
         const canvas = await generateCountdownImage(days, nextSeason.name);
 
-        // Download the image
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
         link.download = `${nextSeason.name}-countdown.png`;
