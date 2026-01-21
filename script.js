@@ -145,7 +145,5 @@ document.getElementById('share-btn').addEventListener('click', async function ()
     } catch (error) {
         console.error('Error generating image:', error);
         button.textContent = 'Error - Try Again';
-    } finally {
-        button.disabled = false;
-    }
+    } 
 });
