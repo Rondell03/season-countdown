@@ -51,13 +51,4 @@ function updateCountdown() {
     countdownElement.innerHTML = displayText;
 }
 
-// Add event listeners to format radio buttons
-document.addEventListener('DOMContentLoaded', function () {
-    const formatRadios = document.querySelectorAll('input[name="format"]');
-    formatRadios.forEach(radio => {
-        radio.addEventListener('change', updateCountdown);
-    });
-    updateCountdown();
-});
-
 setInterval(updateCountdown, 1000);
