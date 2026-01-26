@@ -66,7 +66,7 @@ function generateCountdownImage(days, seasonName) {
             ctx.shadowBlur = 10;
             ctx.shadowOffsetX = 2;
             ctx.shadowOffsetY = 2;
-            ctx.fillText(`${days} until ${seasonName}`, canvas.width / 2, canvas.height / 2 - 50);
+            ctx.fillText(`${days} days until ${seasonName}`, canvas.width / 2, canvas.height / 2 - 50);
 
             ctx.font = '32px Arial';
             ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
